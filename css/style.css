@@ -10,12 +10,11 @@ body {
 
 .wrapper .form-container {
 	background-color: var(--formColor);
-	width: 736px;
-/*	height: 420px;*/
+	width: 46rem;
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
-	border-radius: 4px;
+	border-radius: 0.25rem;
 }
 
 .form-container .box-form {
@@ -26,8 +25,8 @@ body {
 .form-container .box-form .input-content .box-input{
 	display: flex;
 	flex-direction: column;
-	gap: 8px 0;
-	margin-bottom: 8px;
+	gap: 0.5rem 0;
+	margin-bottom: 0.5rem;
 }
 
 .form-container .box-form .input-content label {
@@ -44,11 +43,11 @@ body {
 	padding: 0 1rem;
 	font-size: 1rem;
 	color: var(--labelColor);
-	height: 45px;
+	height: 2.8125rem;
 }
 
 .form-container .box-form .input-content .box-input input{
-	width: 328px;
+	width: 20.5rem;
 
 }
 
@@ -66,8 +65,8 @@ body {
 
 .form-container .box-form .input-content .box-input-more {
 	display: flex;
-	width: 328px;
-	gap: 0 8px;
+	width: 20.5rem;
+	gap: 0 0.5rem;
 }
 
 .form-container .box-form .input-content .box-input-more > div:nth-child(2) {
@@ -80,21 +79,21 @@ body {
 
 .form-container .box-form .input-content .box-input-more label {
 	display: flex;
-	gap: 0 8px;
-	margin-bottom: 8px;
+	gap: 0 0.5rem;
+	margin-bottom: 0.5rem;
 	align-items: center;
 }
 
 .form-container .box-form .input-content .box-input-more .info {
-	margin-top: 8px;
+	margin-top: 0.5rem;
 }
 
 .form-container .box-form .input-content .info {
 	display: flex;
 	align-items: center;
-	gap: 0 8px;
-	max-height: 18px;
-	height: 18px;
+	gap: 0 0.5rem;
+	max-height: 1.125rem;
+	height: 1.125rem;
 	pointer-events: none;
 	visibility: hidden;
 }
@@ -124,7 +123,7 @@ body {
 .form-container .box-form .card-content .status-security {
 	display: flex;
 	align-items: center;
-	gap: 0 8px;
+	gap: 0 0.5rem;
 	color: #E5E7EB;
 }
 
@@ -137,7 +136,7 @@ body {
 .form-container .box-form .box-card {
 
 	background: url('./../assets/background-card-1.svg'), rgb(17, 24, 39);
-	border-radius: 16px;
+	border-radius: 1rem;
 	background-size: cover;
 	box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
 	border: 1px inset #000000a6;
@@ -148,14 +147,14 @@ body {
 }
 
 .form-container .box-form .box-card .bar {
-	height: 40px;
+	height: 2.5rem;
 	background-color: var(--bodyColor);
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 
 .form-container .box-form .card-content .rotate-card {
-	width: 30px;
-	height: 30px;
+	width: 1.875rem;
+	height: 1.875rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -185,7 +184,7 @@ body {
 
 .form-container .box-form .card-content .content
 .cvv .cvv-number {
-	height: 40px;
+	height: 2.5rem;
 	width: 80%;
 	border-radius: 4px;
 	background-color: #d1d5db;
@@ -200,14 +199,14 @@ body {
 }
 
 .form-container .box-form .card-content .content {
-	width: 280px;
-	height: 168px;
+	width: 17.5rem;
+	height: 10.5rem;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
-	border-radius: 16px;
+	border-radius: 1rem;
 	justify-content: space-between;
-	backdrop-filter: blur(48px);
+	backdrop-filter: blur(3rem);
 }
 
 .form-container .box-form .card-content .content .card-header {
@@ -239,7 +238,7 @@ body {
 .card-body .number-card {
 	margin-bottom: 1rem;
 	word-spacing: 8px;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
 
 .form-container .box-form .card-content .content
@@ -247,8 +246,8 @@ body {
 }
 
 .form-container .button-submit {
-	height: 56px;
-	border-radius: 4px;
+	height: 3.5rem;
+	border-radius: 0.25rem;
 	background-color: var(--buttonColor);
 	color: #fff;
 	font-weight: 600;
@@ -267,8 +266,8 @@ body {
 
 .form-container .card-content-box {
 	position: relative;
-	width: 280px;
-	height: 168px;
+	width: 17.5rem;
+	height: 10.5rem;
 	transition: all .5s;
 	transform-style: preserve-3d;
 }
