@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+*,
+*::before,
+*::after,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+:root {
+	--bodyColor: #111827;
+	--formColor: #1F2937;
+	--buttonColor: #9333ea;
+	--labelColor: #F3F4F6;
+	--placeholderColor: #9CA3AF;
+	--statusError: #FB7185;
+	--borderForm: #374151;
+	--nameCardColor: #F9FAFB;
+	--borderInputDefault: #374151;
+	--borderInputFocus: #9333ea;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, button {
+	outline: none;
+	border: 0;
+}
+
+span.icon img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

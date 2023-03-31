@@ -1,0 +1,326 @@
+body {
+	background-color: var(--bodyColor);
+}
+
+.wrapper {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+.wrapper .form-container {
+	background-color: var(--formColor);
+	width: 736px;
+/*	height: 420px;*/
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	border-radius: 4px;
+}
+
+.form-container .box-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-container .box-form .input-content .box-input{
+	display: flex;
+	flex-direction: column;
+	gap: 8px 0;
+	margin-bottom: 8px;
+}
+
+.form-container .box-form .input-content label {
+	font-size: .875rem;
+	color: var(--labelColor);
+	font-weight: 600;
+}
+
+.form-container .box-form .input-content input {
+/*	328/48*/
+	background-color: var(--bodyColor);
+	border: 1px solid var(--borderInputDefault);
+	border-radius: 4px;
+	padding: 0 1rem;
+	font-size: 1rem;
+	color: var(--labelColor);
+	height: 45px;
+}
+
+.form-container .box-form .input-content .box-input input{
+	width: 328px;
+
+}
+
+.form-container .box-form .input-content input::placeholder {
+	color: var(--placeholderColor);
+	word-spacing: 0;
+}
+
+
+.form-container .box-form .input-content input:focus {
+	border-color: var(--borderInputFocus);
+	border-width: 2px;
+}
+
+
+.form-container .box-form .input-content .box-input-more {
+	display: flex;
+	width: 328px;
+	gap: 0 8px;
+}
+
+.form-container .box-form .input-content .box-input-more > div:nth-child(2) {
+	flex: 1 1 50%;
+}
+
+.form-container .box-form .input-content .box-input-more > div input {
+	width: 100%;
+}
+
+.form-container .box-form .input-content .box-input-more label {
+	display: flex;
+	gap: 0 8px;
+	margin-bottom: 8px;
+	align-items: center;
+}
+
+.form-container .box-form .input-content .box-input-more .info {
+	margin-top: 8px;
+}
+
+.form-container .box-form .input-content .info {
+	display: flex;
+	align-items: center;
+	gap: 0 8px;
+	max-height: 18px;
+	height: 18px;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.form-container .box-form .input-content .info.visible {
+	visibility: visible;
+}
+
+.form-container .box-form .input-content .info.view {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.form-container .box-form .input-content .info .message {
+	color: var(--statusError);
+	font-size: .8125rem;
+
+}
+
+.form-container .box-form .card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem 0;
+	align-items: center;
+}
+
+.form-container .box-form .card-content .status-security {
+	display: flex;
+	align-items: center;
+	gap: 0 8px;
+	color: #E5E7EB;
+}
+
+.form-container .box-form .card-content .status-security span {
+	font-size: 0.875rem;
+
+}
+
+
+.form-container .box-form .box-card {
+
+	background: url('./../assets/background-card-1.svg'), rgb(17, 24, 39);
+	border-radius: 16px;
+	background-size: cover;
+	box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
+	border: 1px inset #000000a6;
+}
+
+.form-container .box-form .box-card:nth-child(2){
+	background: url('./../assets/background-card-2.svg'), rgb(17, 24, 39);
+}
+
+.form-container .box-form .box-card .bar {
+	height: 40px;
+	background-color: var(--bodyColor);
+	margin-top: 20px;
+}
+
+.form-container .box-form .card-content .rotate-card {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	transition: all .3s;
+}
+
+.form-container .box-form .card-content .rotate-card:hover {
+	background-color: rgba(255, 255, 255, 0.04);
+	cursor: pointer;
+}
+
+.form-container .box-form .card-content .content.card-2 {
+	padding: 0;
+	justify-content: start;
+	gap: 30px 0;
+}
+
+.form-container .box-form .card-content .content
+.cvv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	gap: .5rem;
+}
+
+.form-container .box-form .card-content .content
+.cvv .cvv-number {
+	height: 40px;
+	width: 80%;
+	border-radius: 4px;
+	background-color: #d1d5db;
+	text-align: left;
+	display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bodyColor);
+}
+
+.form-container .box-form .card-content .content {
+	width: 280px;
+	height: 168px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 16px;
+	justify-content: space-between;
+	backdrop-filter: blur(48px);
+}
+
+.form-container .box-form .card-content .content .card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-container .box-form .card-content .content
+.card-body .number-card {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.form-container .box-form .card-content .content
+.card-body .name-and-date{
+	display: flex;
+	justify-content: space-between;
+	opacity: .5;
+}
+
+.form-container .box-form .card-content .content
+.card-body {
+	color: var(--nameCardColor);
+
+}
+
+.form-container .box-form .card-content .content
+.card-body .number-card {
+	margin-bottom: 1rem;
+	word-spacing: 8px;
+    letter-spacing: 4px;
+}
+
+.form-container .box-form .card-content .content
+.card-body .name {
+}
+
+.form-container .button-submit {
+	height: 56px;
+	border-radius: 4px;
+	background-color: var(--buttonColor);
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.125rem;
+	margin-top: 1rem;
+}
+
+.form-container .button-submit:hover {
+	background-color: #A855F7;
+}
+
+.form-container .button-submit.disable {
+	opacity: 50%;
+	pointer-events: none;
+}
+
+.form-container .card-content-box {
+	position: relative;
+	width: 280px;
+	height: 168px;
+	transition: all .5s;
+	transform-style: preserve-3d;
+}
+
+.form-container .card-content-box > div {
+	position: absolute;
+}
+
+.form-container .card-content-box > div:nth-child(1) {
+	transform: rotateY(180deg);
+}
+
+.form-container .card-content-box.rotate {
+	transform: rotateY(180deg) ;
+}
+
+.form-container .card-content-box.rotate > div:nth-child(1) {
+	backface-visibility: visible;
+	z-index: 2;
+}
+
+.form-container .card-content-box.rotate > div:nth-child(2) {
+	backface-visibility: hidden;
+	z-index: 1;
+}
+
+
+@media(max-width: 745px){
+
+	body {
+		background-color: var(--formColor);
+	}
+
+	.wrapper .form-container {
+		width: max-content;
+	}
+
+	.form-container .box-form {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem 0;
+	}
+
+	.form-container .box-form .input-content {
+		order: 2;
+	}
+
+	.form-container .box-form .card-content {
+		order: 1;
+	}
+
+	.form-container .box-form .card-content .status-security {
+    	display: none;
+    }
+}
